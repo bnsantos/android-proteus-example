@@ -4,7 +4,7 @@ var Path = require('path');
 
 http.createServer(function (request, response) {
 
-  var path = '.' + request.url;
+  var path = './data/' + request.url;
 
   if (path == './') {
     path = './index.html';
